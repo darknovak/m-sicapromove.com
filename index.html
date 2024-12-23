@@ -1002,6 +1002,24 @@ button:hover::before {
 
    
     <script>
+      // Registra o Service Worker
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js')
+        .then(() => console.log('Service Worker registrado com sucesso!'))
+        .catch((error) => console.error('Falha ao registrar o Service Worker:', error));
+}
+
+// Detecta conexão online e offline
+function checkConnectionStatus() {
+    if (navigator.onLine) {
+        console.log('Conectado à internet.');
+    } else {
+        alert('Você está offline. Apenas recursos em cache estão disponíveis.');
+    }
+}
+
+window.addEventListener('online', checkConnectionStatus);
+window.addEventListener('offline', checkConnectionStatus);
 // Função para carregar os comentários do JSONPlaceholder
 function loadComments() {
     const commentList = document.getElementById('commentList');
