@@ -1,0 +1,1348 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Música Mundial</title>
+</head>
+<body>
+  <h1>
+    
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gera Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+  /* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formulário de Envio de Música */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de músicas */
+#musicList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.music-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  /* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formulário de Comentários */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de Comentários */
+.comment-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  /* Estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Formulário de Envio de Música */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Lista de músicas */
+#musicList {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.music-item {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+  /* Estilo para fixar o player de áudio na tela */
+.audio-player {
+    position: fixed; /* Fixa o player de áudio na tela */
+    bottom: 20px; /* Distância do fundo da tela */
+    left: 20px; /* Distância da esquerda da tela */
+    background-color: #fff; /* Cor de fundo para o player */
+    padding: 10px;
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra para destacar o player */
+    z-index: 9999; /* Garante que o player fique acima de outros elementos */
+}
+
+/* Estilo do player de áudio */
+.audio-player audio {
+    width: 300px; /* Ajuste do tamanho do player de áudio */
+    border-radius: 5px; /* Borda arredondada */
+}
+  /* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+header h4 {
+    font-size: 1.2em;
+    color: #555;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para o ícone */
+header .icon {
+    color: #4CAF50;  /* Cor do ícone */
+    margin-right: 10px;  /* Espaço entre o ícone e o texto */
+    font-size: 1.5em;  /* Tamanho do ícone */
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o corpo da página ocupe toda a altura da tela */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Permite que o conteúdo se mova livremente */
+    padding: 20px;
+    overflow-y: auto; /* Permite rolagem vertical quando o conteúdo ultrapassa a altura da tela */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Faz o conteúdo ocupar o restante do espaço disponível */
+    width: 100%; /* Garante que o conteúdo ocupe toda a largura da tela */
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones se ajustem em várias linhas */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o corpo da página ocupe toda a altura da tela */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Permite que o conteúdo se mova livremente */
+    padding: 20px;
+    overflow-y: scroll; /* Permite rolagem vertical */
+    height: auto; /* Permite que a altura da página se ajuste conforme o conteúdo */
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os ícones que não cabem em uma linha sejam movidos para a próxima linha */
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 100px; /* Espaço extra na parte inferior para rolagem */
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Garante que o corpo da página ocupe toda a altura da tela */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Permite que o conteúdo se mova livremente */
+    padding: 20px;
+    overflow-y: auto; /* Permite rolagem vertical quando o conteúdo ultrapassa a altura da tela */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Faz o conteúdo ocupar o restante do espaço disponível */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; /* Dá um espaçamento adequado na parte inferior */
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon img {
+    width: 35px;
+    height: 35px;
+}
+
+a {
+    text-decoration: none;
+}
+/* Estilo do Rodapé */
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.copyright {
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #ff4c4c; /* Cursor de digitação */
+    width: 100%; /* Largura ajustável */
+    margin: 0 auto;
+    animation: typing 4s steps(40, end), blink 0.5s step-end infinite alternate;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Animação do cursor piscando */
+@keyframes blink {
+    from {
+        border-right-color: #ff4c4c;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+  /* Menu básico e tema Dark com detalhes vermelhos */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    background: #1f1f1f;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ff4c4c;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Tornar o menu dinâmico em dispositivos móveis */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background: #1f1f1f;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-list li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
+}
+  /* Importando Font Awesome diretamente no CSS */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+
+/* Estilo Geral - Dark Theme */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+header {
+    background: #1f1f1f;
+    color: #ff4c4c;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: #1f1f1f;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input, textarea, select {
+    background: #333;
+    color: #fff;
+}
+
+button {
+    background: #ff4c4c;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #ff3333;
+}
+
+.music-item {
+    background: #222;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-item audio {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.comments-section {
+    margin-top: 2rem;
+}
+
+.comments-section h2 {
+    color: #ff4c4c;
+}
+
+.comment {
+    background: #333;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+}
+
+/* Ícones para formulários */
+input::placeholder, textarea::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]::placeholder {
+    content: '\f007'; /* Ícone de usuário (Font Awesome) */
+    font-family: 'Font Awesome 6 Free';
+}
+
+input[type="email"]::placeholder {
+    content: '\f0e0'; /* Ícone de envelope (Font Awesome) */
+    font-family: 'Font Awesome 6 Free';
+}
+
+/* Botões com ícones */
+button::before {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+    display: inline-block;
+}
+
+button[type="submit"]::before {
+    content: '\f1d8'; /* Ícone de upload */
+}
+
+button:hover::before {
+    content: '\f058'; /* Ícone de check */
+}
+
+/* Ícones para a seção de música */
+.music-item h3::before {
+    content: '\f001'; /* Ícone de nota musical */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+    color: #ff4c4c;
+}
+
+/* Ícones para comentários */
+.comments-section h2::before {
+    content: '\f086'; /* Ícone de comentários */
+    font-family: 'Font Awesome 6 Free';
+    margin-right: 0.5rem;
+    color: #ff4c4c;
+}
+
+/* Estilo do Banner de Cookies */
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1f1f1f;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie-banner button {
+    background: #ff4c4c;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Ícones no Banner de Cookies */
+.cookie-banner p::before {
+    content: '\f6cb'; /* Ícone de cookie */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+
+/* Adicionando ícones gerais */
+.icon {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    margin-right: 0.5rem;
+}
+        /* Estilo Geral - Dark Theme */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        header {
+            background: #1f1f1f;
+            color: #ff4c4c;
+            padding: 1.5rem 0;
+            text-align: center;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            background: #1f1f1f;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        input, textarea, select {
+            background: #333;
+            color: #fff;
+        }
+
+        button {
+            background: #ff4c4c;
+            color: #fff;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background: #ff3333;
+        }
+
+        .music-item {
+            background: #222;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .music-item audio {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        .comments-section {
+            margin-top: 2rem;
+        }
+
+        .comments-section h2 {
+            color: #ff4c4c;
+        }
+
+        .comment {
+            background: #333;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 5px;
+        }
+
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: #1f1f1f;
+            color: #fff;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cookie-banner button {
+            background: #ff4c4c;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+          
+    </style>
+</head>
+<body>
+   <!-- Cabeçalho -->
+    <header>
+        <h4>PROMOVE MUSIC</h4>
+        <h4><i class="icon fas fa-music"></i> Músicas MUNDIAL</h4>
+    </header>
+
+ 
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                
+            </div>
+            <ul class="nav-list">
+                <li><a href="cadastro.html">Cadastrar-se</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+
+   
+
+    <!-- Formulário de Envio de Música -->
+    <div class="container">
+        <form id="uploadForm">
+            <h2>Envie Sua Música</h2>
+            <input type="text" id="musicTitle" placeholder="Título da Música" required>
+            <input type="text" id="artistName" placeholder="Nome do Cantor" required>
+            <select id="musicGenre">
+                <option value="Zouk">Zouk</option>
+                <option value="Pop">Pop</option>
+                <option value="Afro Pop">Afro Pop</option>
+                <option value="Afro Beat">Afro Beat</option>
+                <option value="Outro">Outro</option>
+            </select>
+            <textarea id="musicDescription" placeholder="Descrição da Música" rows="3"></textarea>
+            <input type="file" id="musicFile" accept="audio/*" required>
+            <button type="submit"><i class="icon fas fa-upload"></i> Enviar</button>
+        </form>
+
+        <!-- Lista de Músicas Recentes -->
+        <div id="musicList">
+            <h2>Músicas Recentes</h2>
+            <!-- As músicas enviadas serão exibidas aqui -->
+        </div>
+    </div>
+
+   
+    
+
+
+        <div id="musicList">
+            <h2>Músicas Recentes</h2>
+            <!-- As músicas enviadas serão exibidas aqui -->
+        </div>
+
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <form id="commentForm">
+                <input type="text" id="commentName" placeholder="Seu Nome" required>
+                <input type="email" id="commentEmail" placeholder="Seu E-mail" required>
+                <textarea id="commentText" placeholder="Deixe seu comentário" rows="3" required></textarea>
+                <button type="submit">Enviar Comentário</button>
+            </form>
+            <div id="commentList">
+                <!-- Os comentários serão exibidos aqui -->
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="social-icons">
+        <a href="https://www.facebook.com/isaac.programador2" target="_blank">
+            <div class="social-icon" style="background-color: #1877f2;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+            </div>
+        </a>
+        <a href="https://m.instagram.com/@isaaccunha.4" target="_blank">
+            <div class="social-icon" style="background-color: #E1306C;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </div>
+        </a>
+        <a href="https://www.youtube.com/@Isaac_Muaco2" target="_blank">
+            <div class="social-icon" style="background-color: #FF0000;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            </div>
+        </a>
+    </div>
+</body>
+
+
+ <div class="cookie-banner" id="cookieBanner">
+        <p>Este site usa cookies para melhorar sua experiência.</p>
+        <button id="acceptCookies">Aceitar</button>
+    </div>
+
+    <!-- Outros conteúdos do site -->
+
+    <!-- Rodapé com Copyright Dinâmico -->
+    <footer>
+        <div class="copyright">
+            <span id="dynamic-copyright"></span>
+        </div>
+    </footer>
+
+   
+    <script>
+// Função para carregar os comentários do JSONPlaceholder
+function loadComments() {
+    const commentList = document.getElementById('commentList');
+
+    // Faz uma requisição para a API para pegar os comentários existentes
+    fetch('https://jsonplaceholder.typicode.com/comments')
+        .then(response => response.json())
+        .then(data => {
+            commentList.innerHTML = '<h2>Comentários Recentes</h2>';
+            data.slice(0, 5).forEach(comment => {
+                const commentItem = document.createElement('div');
+                commentItem.classList.add('comment-item');
+                commentItem.innerHTML = `
+                    <strong>${comment.name}</strong> (${comment.email})
+                    <p>${comment.body}</p>
+                `;
+                commentList.appendChild(commentItem);
+            });
+        })
+        .catch(error => console.error('Erro ao carregar comentários:', error));
+}
+
+// Função para enviar um novo comentário
+function sendComment(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('commentName').value;
+    const email = document.getElementById('commentEmail').value;
+    const body = document.getElementById('commentText').value;
+
+    // Cria um objeto para o comentário
+    const comment = {
+        name: name,
+        email: email,
+        body: body,
+        postId: 1  // Simula que o comentário é relacionado a um post específico (pode ser qualquer número)
+    };
+
+    // Envia o comentário para a API
+    fetch('https://jsonplaceholder.typicode.com/comments', {
+        method: 'POST',
+        body: JSON.stringify(comment),
+        headers: {
+            'Content-Type': 'application/json',
+        },
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log('Comentário enviado:', data);
+        alert('Seu comentário foi enviado com sucesso!');
+        loadComments();  // Atualiza a lista de comentários
+    })
+    .catch(error => console.error('Erro ao enviar comentário:', error));
+
+    // Limpa o formulário
+    document.getElementById('commentForm').reset();
+}
+
+// Adiciona o evento de envio do formulário
+document.getElementById('commentForm').addEventListener('submit', sendComment);
+
+// Carrega os comentários ao carregar a página
+window.onload = loadComments;
+// Função para carregar músicas do localStorage
+function loadMusic() {
+    const musicList = document.getElementById('musicList');
+    musicList.innerHTML = ''; // Limpa a lista antes de adicionar novas músicas
+
+    // Recupera as músicas do localStorage
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+
+    // Adiciona as músicas à lista
+    storedMusic.forEach((music) => {
+        const musicItem = document.createElement('div');
+        musicItem.classList.add('music-item');
+        musicItem.innerHTML = `
+            <strong>${music.title}</strong><br>
+            Artista: ${music.artist}<br>
+            Gênero: ${music.genre}<br>
+            Descrição: ${music.description}<br>
+            <audio controls><source src="${music.file}" type="audio/mpeg"></audio>
+        `;
+        musicList.appendChild(musicItem);
+    });
+}
+
+// Função para adicionar uma nova música ao localStorage
+function addMusic(event) {
+    event.preventDefault();
+
+    // Coleta os dados do formulário
+    const title = document.getElementById('musicTitle').value;
+    const artist = document.getElementById('artistName').value;
+    const genre = document.getElementById('musicGenre').value;
+    const description = document.getElementById('musicDescription').value;
+    const file = document.getElementById('musicFile').files[0];
+
+    // Cria um objeto para a música
+    const newMusic = {
+        title: title,
+        artist: artist,
+        genre: genre,
+        description: description,
+        file: URL.createObjectURL(file), // Cria um link para o arquivo de áudio
+    };
+
+    // Recupera as músicas armazenadas
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+    storedMusic.push(newMusic);
+
+    // Atualiza o localStorage com a nova lista de músicas
+    localStorage.setItem('musicList', JSON.stringify(storedMusic));
+
+    // Limpa o formulário
+    document.getElementById('uploadForm').reset();
+
+    // Carrega as músicas atualizadas
+    loadMusic();
+}
+
+// Adiciona o evento de envio do formulário
+document.getElementById('uploadForm').addEventListener('submit', addMusic);
+
+// Carrega as músicas na inicialização da página
+window.onload = loadMusic;
+// Função para carregar músicas do localStorage
+function loadMusic() {
+    const musicList = document.getElementById('musicList');
+    musicList.innerHTML = ''; // Limpa a lista antes de adicionar novas músicas
+
+    // Recupera as músicas do localStorage
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+
+    // Adiciona as músicas à lista
+    storedMusic.forEach((music) => {
+        const musicItem = document.createElement('div');
+        musicItem.classList.add('music-item');
+        musicItem.innerHTML = `
+            <strong>${music.title}</strong><br>
+            Artista: ${music.artist}<br>
+            Gênero: ${music.genre}<br>
+            Descrição: ${music.description}<br>
+            <audio controls><source src="${music.file}" type="audio/mpeg"></audio>
+        `;
+        musicList.appendChild(musicItem);
+    });
+}
+
+// Função para adicionar uma nova música ao localStorage
+function addMusic(event) {
+    event.preventDefault();
+
+    // Coleta os dados do formulário
+    const title = document.getElementById('musicTitle').value;
+    const artist = document.getElementById('artistName').value;
+    const genre = document.getElementById('musicGenre').value;
+    const description = document.getElementById('musicDescription').value;
+    const file = document.getElementById('musicFile').files[0];
+
+    // Cria um objeto para a música
+    const newMusic = {
+        title: title,
+        artist: artist,
+        genre: genre,
+        description: description,
+        file: URL.createObjectURL(file), // Cria um link para o arquivo de áudio
+    };
+
+    // Recupera as músicas armazenadas
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+    storedMusic.push(newMusic);
+
+    // Atualiza o localStorage com a nova lista de músicas
+    localStorage.setItem('musicList', JSON.stringify(storedMusic));
+
+    // Limpa o formulário
+    document.getElementById('uploadForm').reset();
+
+    // Carrega as músicas atualizadas
+    loadMusic();
+}
+
+// Adiciona o evento de envio do formulário
+document.getElementById('uploadForm').addEventListener('submit', addMusic);
+
+// Carrega as músicas na inicialização da página
+window.onload = loadMusic;
+// Função para carregar músicas armazenadas no localStorage
+function loadMusic() {
+    const musicList = document.getElementById('musicList');
+    musicList.innerHTML = ''; // Limpar a lista antes de adicionar novas músicas
+
+    // Recupera as músicas do localStorage
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+
+    // Adiciona as músicas à lista
+    storedMusic.forEach((music) => {
+        const musicItem = document.createElement('div');
+        musicItem.classList.add('music-item');
+        musicItem.innerHTML = `
+            <strong>${music.title}</strong><br>
+            Artista: ${music.artist}<br>
+            Gênero: ${music.genre}<br>
+            Descrição: ${music.description}<br>
+            <audio controls><source src="${music.file}" type="audio/mpeg"></audio>
+        `;
+        musicList.appendChild(musicItem);
+    });
+}
+
+// Função para adicionar uma nova música no localStorage
+function addMusic(event) {
+    event.preventDefault();
+
+    // Coleta os dados do formulário
+    const title = document.getElementById('musicTitle').value;
+    const artist = document.getElementById('artistName').value;
+    const genre = document.getElementById('musicGenre').value;
+    const description = document.getElementById('musicDescription').value;
+    const file = document.getElementById('musicFile').files[0];
+
+    // Cria um objeto para a música
+    const newMusic = {
+        title: title,
+        artist: artist,
+        genre: genre,
+        description: description,
+        file: URL.createObjectURL(file), // Cria um link para o arquivo de áudio
+    };
+
+    // Recupera as músicas armazenadas
+    const storedMusic = JSON.parse(localStorage.getItem('musicList')) || [];
+    storedMusic.push(newMusic);
+
+    // Atualiza o localStorage com a nova lista de músicas
+    localStorage.setItem('musicList', JSON.stringify(storedMusic));
+
+    // Limpa o formulário
+    document.getElementById('uploadForm').reset();
+
+    // Carrega as músicas atualizadas
+    loadMusic();
+}
+
+// Adiciona o evento de envio do formulário
+document.getElementById('uploadForm').addEventListener('submit', addMusic);
+
+// Carrega as músicas na inicialização da página
+window.onload = loadMusic;
+// Configurando o copyright dinâmico
+document.addEventListener('DOMContentLoaded', () => {
+    const copyrightElement = document.getElementById('dynamic-copyright');
+    const text = `© ${new Date().getFullYear()} Criado Por Isaac`;
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            copyrightElement.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeWriter, 100); // Velocidade da digitação (100ms por caractere)
+        }
+    }
+
+    typeWriter();
+});
+  // Função para exibir o banner com um atraso
+        setTimeout(function() {
+            document.querySelector('.banner').style.opacity = 1;
+        }, 500); // Define o atraso antes do banner aparecer
+    
+// Script para menu dinâmico
+const mobileMenu = document.getElementById('mobile-menu');
+const navList = document.querySelector('.nav-list');
+
+// Alternar entre abrir e fechar o menu
+mobileMenu.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+    navList.classList.toggle('active');
+});
+        // Painel de cookies
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptCookies = document.getElementById('acceptCookies');
+
+        acceptCookies.addEventListener('click', () => {
+            cookieBanner.style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        });
+
+        if (localStorage.getItem('cookiesAccepted') === 'true') {
+            cookieBanner.style.display = 'none';
+        }
+
+        // Upload de música
+        const uploadForm = document.getElementById('uploadForm');
+        const musicList = document.getElementById('musicList');
+
+        uploadForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const title = document.getElementById('musicTitle').value;
+            const artist = document.getElementById('artistName').value;
+            const genre = document.getElementById('musicGenre').value;
+            const file = document.getElementById('musicFile').files[0];
+
+            const musicItem = document.createElement('div');
+            musicItem.classList.add('music-item');
+
+            musicItem.innerHTML = `
+                <h3>${title} - ${artist}</h3>
+                <p><strong>Estilo:</strong> ${genre}</p>
+                <audio controls>
+                    <source src="${URL.createObjectURL(file)}" type="${file.type}">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            `;
+
+            musicList.appendChild(musicItem);
+            uploadForm.reset();
+        });
+
+        // Comentários
+        const commentForm = document.getElementById('commentForm');
+        const commentList = document.getElementById('commentList');
+
+        commentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('commentName').value;
+            const email = document.getElementById('commentEmail').value;
+            const text = document.getElementById('commentText').value;
+
+            const comment = document.createElement('div');
+            comment.classList.add('comment');
+            comment.innerHTML = `
+                <p><strong>${name}</strong> (${email})</p>
+                <p>${text}</p>
+            `;
+
+            commentList.appendChild(comment);
+            commentForm.reset();
+        });
+    </script>
+</body>
+</html>
