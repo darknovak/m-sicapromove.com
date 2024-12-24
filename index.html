@@ -891,6 +891,295 @@ button:hover::before {
             border-radius: 5px;
             cursor: pointer;
         }
+      body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#musicList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.music-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin: 15px 0;
+    width: 80%;
+    max-width: 600px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-item p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+      }
+      <body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo do botão redondo */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito de hover dinâmico */
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-button i {
+            transition: transform 0.3s;
+        }
+
+        /* Efeito de animação no ícone */
+        .chat-button:hover i {
+            transform: rotate(360deg);
+        }
+
+        /* Estilo do chat box */
+        #chat-box {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat-box header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #chat-box .messages {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #chat-box .messages p {
+            margin: 0;
+            padding: 5px 0;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        #chat-box footer {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #chat-box footer input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #chat-box footer button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #chat-box footer button:hover {
+            background-color: #0056b3;
+        }
+      body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Estilo do botão redondo */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        /* Efeito de hover dinâmico */
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-button i {
+            transition: transform 0.3s;
+        }
+
+        /* Efeito de animação no ícone */
+        .chat-button:hover i {
+            transform: rotate(360deg);
+        }
+
+        /* Estilo do chat box */
+        #chat-box {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            display: none;
+            flex-direction: column;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat-box header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+        }
+
+        #chat-box .messages {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        #chat-box .messages p {
+            margin: 0;
+            padding: 5px 0;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        #chat-box footer {
+            display: flex;
+            border-top: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        #chat-box footer input {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        #chat-box footer button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #chat-box footer button:hover {
+            background-color: #0056b3;
+        }
           
     </style>
 </head>
@@ -942,8 +1231,59 @@ button:hover::before {
         </div>
     </div>
 
-   
+   <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     
+
+    <!-- Botão de Chat -->
+    <div class="chat-button" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Caixa de Chat -->
+    <div id="chat-box">
+        <header>Chat Online</header>
+        <div class="messages">
+            <p>Olá! Como posso ajudar?</p>
+        </div>
+        <footer>
+            <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </footer>
+    
+    
+
+    <!-- Botão de Chat -->
+    <div class="chat-button" onclick="toggleChat()">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Caixa de Chat -->
+    <div id="chat-box">
+        <header>Chat Online</header>
+        <div class="messages">
+            <p>Olá! Como posso ajudar?</p>
+        </div>
+        <footer>
+            <input type="text" id="message-input" placeholder="Digite sua mensagem...">
+            <button onclick="sendMessage()">Enviar</button>
+        </footer>
+    </div>
+
+    <script>
+
+
+        <div id="musicList">
+            <h2>Músicas Recentes</h2>
+            <!-- As músicas enviadas serão exibidas aqui -->
+        </div>
+
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <form id="commentForm">
+                <input type="text" id="commentName" placeholder="Seu Nome" required>
+/div>
+
+    <script>
 
 
         <div id="musicList">
@@ -1002,6 +1342,115 @@ button:hover::before {
 
    
     <script>
+      // Inicializar o EmailJS com seu User ID
+(function() {
+    emailjs.init('service_zti12kn');  // Substitua 'seu_user_id' pelo seu ID de usuário do EmailJS
+})();
+
+// Função para enviar a mensagem por e-mail
+function sendMessage() {
+    const input = document.getElementById('message-input');
+    const messageText = input.value.trim();
+    
+    if (messageText !== '') {
+        const messageContainer = document.querySelector('.messages');
+        const newMessage = document.createElement('p');
+        newMessage.textContent = messageText;
+        messageContainer.appendChild(newMessage);
+        
+        // Enviar mensagem para o e-mail
+        const emailData = {
+            to_email: 'isaacmuaco582@gmail.com',
+            message: messageText
+        };
+
+        emailjs.send('seu_service_id', 'seu_template_id', emailData)
+            .then(function(response) {
+                console.log('Mensagem enviada com sucesso', response);
+            }, function(error) {
+                console.log('Erro ao enviar mensagem', error);
+            });
+        
+        input.value = '';  // Limpar o campo de entrada
+        messageContainer.scrollTop = messageContainer.scrollHeight;  // Rolagem para a última mensagem
+    }
+}
+                  // Função para mostrar/ocultar o chat
+        function toggleChat() {
+            const chatBox = document.getElementById('chat-box');
+            chatBox.style.display = (chatBox.style.display === 'none' || chatBox.style.display === '') ? 'flex' : 'none';
+        }
+
+        // Função para enviar a mensagem
+        function sendMessage() {
+            const input = document.getElementById('message-input');
+            const messageText = input.value.trim();
+            if (messageText !== '') {
+                const messageContainer = document.querySelector('.messages');
+                const newMessage = document.createElement('p');
+                newMessage.textContent = messageText;
+                messageContainer.appendChild(newMessage);
+                input.value = '';
+                messageContainer.scrollTop = messageContainer.scrollHeight; // Rolagem para a última mensagem
+            }
+        }
+    
+
+          
+      const express = require('express');
+const multer = require('multer');
+const mongoose = require('mongoose');
+const path = require('path');
+
+// Conectar ao MongoDB
+mongoose.connect('mongodb://localhost:27017/musicdb', { useNewUrlParser: true, useUnifiedTopology: true });
+
+// Criar o modelo de música
+const musicSchema = new mongoose.Schema({
+    title: String,
+    url: String
+});
+
+const Music = mongoose.model('Music', musicSchema);
+
+const app = express();
+const port = 3000;
+
+// Configuração do Multer para armazenar arquivos de música no servidor
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads/');
+    },
+    filename: (req, file, cb) => {
+        cb(null, Date.now() + path.extname(file.originalname));
+    }
+});
+
+const upload = multer({ storage: storage });
+
+// Endpoint para enviar música
+app.post('/upload-music', upload.single('musicFile'), async (req, res) => {
+    const music = new Music({
+        title: req.file.originalname,
+        url: `/uploads/${req.file.filename}`
+    });
+
+    await music.save();
+    res.send('Música enviada com sucesso!');
+});
+
+// Endpoint para obter músicas armazenadas
+app.get('/get-music', async (req, res) => {
+    const musicData = await Music.find();
+    res.json(musicData);
+});
+
+// Servir os arquivos de música
+app.use('/uploads', express.static('uploads'));
+
+app.listen(port, () => {
+    console.log(`Servidor rodando na porta ${port}`);
+});
       // Registra o Service Worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js')
